@@ -1,14 +1,10 @@
 {
-  "name": "testing-practice",
-  "version": "1.0.0",
-  "description": "practices using TDD",
-  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "Lorri Romesberg",
-  "license": "",
   "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "jest": "^26.6.3"
   }
