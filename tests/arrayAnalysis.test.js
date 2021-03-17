@@ -1,4 +1,4 @@
-const {average, minimum, maximum, length} = require('../codes/arrayAnalysis');
+const {average, minimum, maximum, length, analyze} = require('../codes/arrayAnalysis');
 
 const data = [1, 8, 3, 4, 2, 6];
 
@@ -15,5 +15,14 @@ test('returns maximum number', () => {
 })
 
 test('returns number of items in an array', () => {
-    expect(length(data)).toEqual(6);
-  });
+  expect(length(data)).toEqual(6);
+});
+
+test('returns analysis in on output', () => {
+  expect(analyze(data)).toEqual({
+    average: 4,
+    minimum: 1,
+    maximum: 8,
+    length: 6,
+  })
+})

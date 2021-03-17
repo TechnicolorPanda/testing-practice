@@ -29,5 +29,14 @@ const maximum = (array) => {
 const length = (array) => {
   return array.length;
 }
+
+const analyze = (array) => {
+  return {
+      average: average(array),
+      minimum: minimum(array),
+      maximum: maximum(array),
+      length: length(array),
+  }
+}
   
-  module.exports = {average, minimum, maximum, length};
+  module.exports = {average, minimum, maximum, length, analyze};
