@@ -12,14 +12,14 @@ test('encrypts word with capitalization', () => {
   expect(encrypt('LeRoy')).toEqual('MfSpz');
 })
 
-// test('encrypts sentence', () => {
-//   expect(encrypt('LeRoy is the cutest hedgehog')).toEqual('MfSpz jt uif dvuftu ifehfiph');
-// });
+test('encrypts sentence', () => {
+  expect(encrypt('LeRoy is the cutest hedgehog')).toEqual('MfSpz jt uif dvuftu ifehfiph');
+});
 
-// test('encrypts sentence maintaining punctution', () => {
-//     expect(encrypt('My hedgehog, LeRoy, needs a bath.')).toEqual('Nz ifehfiph, MfSpz, offet b cbui.');
-// });
+test('encrypts sentence maintaining punctution', () => {
+    expect(encrypt('My hedgehog, LeRoy, needs a bath.')).toEqual('Nz ifehfiph, MfSpz, offet b cbui.');
+});
 
-// test('does not encrypt empty string', () => {
-//     expect(encrypt()).toEqual();
-// })
+test('does not encrypt empty string', () => {
+    expect(encrypt()).toEqual();
+})
